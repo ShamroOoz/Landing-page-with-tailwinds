@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Bookmark Landing Page</title>
+  </head>
+  <body class="font-Poppins">
+    <!-- Header -->
+    <header>
+      <nav class="container py-4 mt-4 sm:mt-8 flex items-center">
+        <!-- Logo -->
+        <div class="logo cursor-pointer">
+          <a href="/">
+            <img src="./imgs/logo-bookmark.svg" alt="Bookmark Logo" />
+          </a>
+        </div>
+        <!-- list ul -->
+        <ul
+          class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs"
+        >
+          <li class="cursor-pointer hover:text-bookmark-red">
+            <a href="/"> Features</a>
+          </li>
+          <li class="cursor-pointer hover:text-bookmark-red">
+            <a href="/">Pricing</a>
+          </li>
+          <li class="cursor-pointer hover:text-bookmark-red">
+            <a href="/"> Contact</a>
+          </li>
+          <!-- Button -->
+          <li class="cursor-pointer">
+            <a href="/">
+              <button
+                class="bg-bookmark-red text-white font-bold py-2 px-4 rounded-full hover:ring ring-pink-500 ring-offset-2 ring-offset-pink-100"
+              >
+                Login
+              </button>
+            </a>
+          </li>
+        </ul>
+
+        <!-- toggle Button -->
+        <button
+          class="toggle-button cursor-pointer sm:hidden flex-1 flex justify-end items-center"
+        >
+          <i class="text-2xl fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero -->
+    <section
+      class="container grid md:grid-cols-2 h-[80vh] items-center justify-items-center text-center"
+    >
+      <!-- Image -->
+      <div class="hero-image self-center">
+        <img src="./imgs/hero-bg.png" alt="Hero Image" />
+      </div>
+      <div class="hero-content flex flex-col self-center">
+        <h2>A Simple Bookmark Manager</h2>
+        <p>
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div>
+          <button
+            class="bg-bookmark-red text-white font-bold py-2 px-4 rounded-full hover:ring ring-pink-500 ring-offset-2 ring-offset-pink-100"
+          >
+            Get Started
+          </button>
+          <button
+            class="bg-bookmark-purple text-white font-bold py-2 px-4 rounded-full hover:ring ring-pink-500 ring-offset-2 ring-offset-pink-100"
+          >
+            Get it on Chrome
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Hero -->
+  </body>
+</html>
