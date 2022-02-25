@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Bookmark Landing Page</title>
+  </head>
+  <body class="font-Poppins">
+    <!-- Header top -->
+    <header>
+      <nav class="container flex items-center py-4 mt-4 sm:mt-8">
+        <!-- Logo -->
+        <div
+          class="duration-300 ease-in-out cursor-pointer logo lg:transition delay-120 lg:hover:-translate-y-1 lg:hover:scale-105"
+        >
+          <a href="/">
+            <img src="./imgs/logo-bookmark.svg" alt="Bookmark Logo" />
+          </a>
+        </div>
+        <!-- list ul -->
+        <ul
+          class="items-center justify-end flex-1 hidden gap-12 text-xs uppercase sm:flex text-bookmark-blue"
+        >
+          <li class="cursor-pointer hover:text-bookmark-red">
+            <a href="/"> Features</a>
+          </li>
+          <li class="cursor-pointer hover:text-bookmark-red">
+            <a href="/">Pricing</a>
+          </li>
+          <li class="cursor-pointer hover:text-bookmark-red">
+            <a href="/"> Contact</a>
+          </li>
+          <!-- Button -->
+          <li class="cursor-pointer">
+            <a href="/">
+              <button
+                class="px-4 py-2 font-bold text-white rounded-full bg-bookmark-red hover:ring ring-pink-500 ring-offset-2 ring-offset-pink-100"
+              >
+                Login
+              </button>
+            </a>
+          </li>
+        </ul>
+
+        <!-- toggle Button -->
+        <button
+          class="flex items-center justify-end flex-1 cursor-pointer toggle-button sm:hidden"
+        >
+          <i class="text-2xl fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero -->
+    <section
+      class="container grid md:grid-cols-2 md:h-[80vh] m-h-screen items-center justify-items-center text-center gap-10 md:gap-0"
+    >
+      <!-- Image -->
+      <div
+        class="self-center duration-300 ease-in-out hero-image lg:transition delay-120 lg:hover:-translate-y-1 lg:hover:scale-105"
+      >
+        <img
+          src="./imgs/hero-bg.png"
+          alt="Hero Image"
+          class="h-64 md:w-full md:h-full"
+        />
+      </div>
+      <div
+        class="flex flex-col self-center mt-3 space-y-4 hero-content md:space-y-5"
+      >
+        <h2
+          class="text-3xl text-center text-bookmark-blue md:text-4 lg:text-5xl"
+        >
+          A Simple Bookmark Manager
+        </h2>
+        <p class="text-lg text-center text-bookmark-grey">
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <!-- BUTTON  -->
+        <div>
+          <button
+            class="px-4 py-2 font-bold text-white rounded-full bg-bookmark-red hover:ring ring-pink-500 ring-offset-2 ring-offset-pink-100"
+          >
+            Get Started
+          </button>
+          <button
+            class="px-4 py-2 font-bold text-white rounded-full bg-bookmark-purple hover:ring ring-blue-500 ring-offset-2 ring-offset-pink-100"
+          >
+            Get it on Chrome
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Hero -->
+
+    <!-- Features -->
+    <section class="mt-10 bg-bookmark-white">
+      <!-- Feature 1  -->
+      <div class="container h-screen pt-5">
+        <div class="flex flex-col items-center justify-center space-y-3">
+          <h2
+            class="text-3xl text-center text-bookmark-blue md:text-4 lg:text-5xl"
+          >
+            Features
+          </h2>
+          <p class="text-lg text-center text-bookmark-grey">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+        </div>
+        <div
+          class="grid md:grid-cols-2 md:h-[80vh] m-h-screen items-center justify-items-center mt-3"
+        >
+          <!-- Image -->
+          <div
+            class="duration-300 ease-in-out Features-image lg:transition delay-120 lg:hover:-translate-y-1 lg:hover:scale-105"
+          >
+            <img
+              src="./imgs/illustration-features-tab-1.png"
+              alt="Features 1-image"
+              class="h-64 md:w-full md:h-full"
+            />
+          </div>
+          <!-- Content -->
+
+          <div class="mt-3 space-y-1 text-center Features-content md:space-y-5">
+            <h1 class="text-3xl text-center text-bookmark-blue">
+              Bookmark in one click
+            </h1>
+            <p class="text-lg text-center text-bookmark-grey">
+              Organize your bookmarks however you like. Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              favourite sites.
+            </p>
+            <button
+              class="px-4 py-2 font-bold text-white rounded-full bg-bookmark-purple hover:ring ring-blue-500 ring-offset-2 ring-offset-pink-100"
+            >
+              Get it on Chrome
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Feature 2  -->
+      <div
+        class="container grid items-center h-screen pt-5 mt-3 md:grid-cols-2 justify-items-center"
+      >
+        <!-- Image -->
+        <div
+          class="duration-300 ease-in-out Features-image lg:transition delay-120 lg:hover:-translate-y-1 lg:hover:scale-105"
+        >
+          <img
+            src="./imgs/illustration-features-tab-2.png"
+            alt="Features 1-image"
+            class="h-64 md:w-full md:h-full"
+          />
+        </div>
+        <!-- Content -->
+        <div class="mt-3 space-y-1 text-center Features-content md:space-y-5">
+          <h1 class="text-3xl text-center text-bookmark-blue">
+            Intelligent search
+          </h1>
+          <p class="text-lg text-center text-bookmark-grey">
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to crawl through all of your bookmarks.s.
+          </p>
+          <button
+            class="px-4 py-2 font-bold text-white rounded-full bg-bookmark-red hover:ring ring-pink-500 ring-offset-2 ring-offset-pink-100"
+          >
+            More Info
+          </button>
+        </div>
+      </div>
+
+      <!-- Feature 3  -->
+
+      <div
+        class="container grid items-center h-screen pt-5 mt-3 md:grid-cols-2 justify-items-center"
+      >
+        <!-- Image -->
+        <div
+          class="duration-300 ease-in-out Features-image lg:transition delay-120 lg:hover:-translate-y-1 lg:hover:scale-105"
+        >
+          <img
+            src="./imgs/illustration-features-tab-3.png"
+            alt="Features 1-image"
+            class="h-64 md:w-full md:h-full"
+          />
+        </div>
+        <!-- Content -->
+        <div class="mt-3 space-y-1 text-center Features-content md:space-y-5">
+          <h1 class="text-3xl text-center text-bookmark-blue">
+            Share your bookmarks
+          </h1>
+          <p class="text-lg text-center text-bookmark-grey">
+            Easily share your bookmarks and collections with others. Create a
+            shareable link that you can send at the click of a button.
+          </p>
+          <button
+            class="px-4 py-2 font-bold text-white rounded-full bg-bookmark-grey hover:ring ring-gray-500 ring-offset-2 ring-offset-pink-100"
+          >
+            More Info
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--End Features -->
+
+    <!-- Download -->
+    <section class="container h-screen ">
+      <div class="flex flex-col items-center justify-center pt-10 space-y-3">
+        <h2
+          class="text-3xl text-center text-bookmark-blue md:text-4 lg:text-5xl"
+        >
+          Download the extension
+        </h2>
+        <p class="text-lg text-center text-bookmark-grey">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+
+       <div class="grid max-w-screen-lg grid-cols-1 gap-10 my-16  md:grid-cols-2 lg:grid-cols-3 md:gap-16" >
+         <!-- Card 1  -->
+             <div class="flex flex-col items-center justify-center p-6 border-2 rounded-md shadow-md ">
+                 <div class="flex flex-col items-center justify-center ">
+                    <img src="./imgs/logo-chrome.svg" alt="" />
+                    <h3 class="mt-5 mb-2 text-lg text-bookmark-blue">Add to Chrome</h3>
+                    <p class="mb-2 font-light text-bookmark-grey">Minimum version 62</p>
+                 </div>
+                
+              
+                  <div>
+                    <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
+                                Add & Install Extension
+                    </button>
+                  </div> 
+             </div>
+
+             <!-- Card 2  -->
+             <div class="flex flex-col items-center justify-center p-6 border-2 rounded-md shadow-md ">
+                 <div class="flex flex-col items-center justify-center ">
+                     <img src="./imgs/logo-firefox.svg" alt="" />
+                    <h3 class="mt-5 mb-2 text-lg text-bookmark-blue">Add to Chrome</h3>
+                    <p class="mb-2 font-light text-bookmark-grey">Minimum version 62</p>
+                 </div>
+                  <div>
+                    <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
+                                Add & Install Extension
+                    </button>
+                  </div> 
+             </div>
+
+              <!-- Card 3 -->
+             <div class="flex flex-col items-center justify-center p-6 border-2 rounded-md shadow-md ">
+                 <div class="flex flex-col items-center justify-center ">
+                     <img src="./imgs/logo-opera.svg" alt="" />
+                    <h3 class="mt-5 mb-2 text-lg text-bookmark-blue">Add to Chrome</h3>
+                    <p class="mb-2 font-light text-bookmark-grey">Minimum version 62</p>
+                 </div>
+                  <div>
+                    <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
+                                Add & Install Extension
+                    </button>
+                  </div> 
+             </div>
+      </div>
+    </seaction>
+
+
+     <!-- Contact Us -->
+    <section class="py-20 text-white bg-bookmark-purple">
+      <div class="container">
+        <div class="mx-auto sm:w-3/4 lg:w-2/4">
+          <p class="mb-8 font-light text-center uppercase">35,000+ ALREADY JOINED</p>
+          <h1 class="text-3xl text-center">Stay up-to-date with what we’re doing</h1>
+          <div class="flex flex-col gap-6 mt-8 sm:flex-row">
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              class="flex-1 px-2 py-3 text-black rounded-md focus:outline-none"
+            />
+            <button type="button" class="btn bg-bookmark-red hover:bg-bookmark-white hover:text-black">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-bookmark-blue">
+      <div class="container flex flex-col items-center md:flex-row">
+        <div class="flex flex-wrap items-center justify-center flex-1 gap-12 md:justify-start">
+          <img src="./imgs/logo-bookmark-white.png" alt="" />
+          <ul class="flex gap-12 text-xs text-white uppercase">
+            <li class="cursor-pointer hover:text-bookmark-red">Features</li>
+            <li class="cursor-pointer hover:text-bookmark-red">Pricing</li>
+            <li class="cursor-pointer hover:text-bookmark-red">Contact</li>
+          </ul>
+        </div>
+        <div class="flex gap-10 mt-12 md:mt-0">
+          <i class="text-2xl text-white cursor-pointer hover:text-bookmark-red fab fa-twitter"></i>
+          <i class="text-2xl text-white cursor-pointer hover:text-bookmark-red fab fa-facebook-square"></i>
+          <i class="text-2xl text-white cursor-pointer hover:text-bookmark-red fab fa-instagram -square"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
